@@ -120,3 +120,119 @@ body {
   right: 120px;
   bottom: 30px;
 }
+
+/* 2fenetre */
+.secfenetre {
+  width: 750px;
+  height: 520px;
+  border-radius: 61px;
+  border: 4px solid #fff;
+  background: rgba(255, 254, 254, 0.55);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
+  padding-left: 0px;
+  display: none;
+}
+
+.titre {
+  color: #000;
+  font-size: 50px;
+  margin-left: 170px;
+  margin-top: 25px;
+}
+.history {
+  border-radius: 20px;
+  border: 2px solid #f5adc8;
+  background: rgba(245, 173, 200, 0.2);
+  width: 670px;
+  height: 78px;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 420px;
+  margin-left: 35px;
+  margin-top: 35px;
+  transition: all 0.4s ease;
+}
+.history:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5.1px 4px #f5adc8;
+}
+.gauche {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.history img {
+  width: 60px;
+  height: 60px;
+}
+
+.history p {
+  font-size: 30px;
+}
+#sup {
+  width: 40px;
+  height: 30px;
+}
+
+.animals {
+  border-radius: 20px;
+  border: 2px solid #f5adc8;
+  background: rgba(245, 173, 200, 0.2);
+  width: 670px;
+  height: 78px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 420px;
+  margin-left: 35px;
+  margin-top: 35px;
+  transition: all 0.4s ease;
+}
+.animals:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5.1px 4px #f5adc8;
+}
+.animals img {
+  width: 60px;
+  height: 60px;
+}
+
+.animals p {
+  font-size: 30px;
+}
+
+.books {
+  border-radius: 20px;
+  border: 2px solid #f5adc8;
+  background: rgba(245, 173, 200, 0.2);
+  width: 670px;
+  height: 78px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 440px;
+  margin-left: 35px;
+  margin-top: 35px;
+  transition: all 0.4s ease;
+}
+.books:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5.1px 4px #f5adc8;
+}
+.books img {
+  width: 60px;
+  height: 60px;
+}
+
+.books p {
+  font-size: 30px;
+}
