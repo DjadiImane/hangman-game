@@ -271,6 +271,8 @@ body {
   padding-left: 0px;
   display: flex;
   flex-direction: column;
+  z-index: 0;
+  position: absolute;
 }
 .thirdfenetrehide {
   display: none;
@@ -356,7 +358,7 @@ body {
   opacity: 0.5;
   cursor: not-allowed;
 }
-.alpha button:not(:disabled):hover:hover {
+.alpha button:not(:disabled):hover {
   cursor: pointer;
 }
 .hint {
@@ -367,4 +369,90 @@ body {
   text-align: center;
   padding: 50px 30px 30px 30px;
   font-size: auto;
+}
+.gameover {
+  display: none;
+}
+.gameoveractive {
+  width: 400px;
+  height: 400px;
+  border-radius: 61px;
+
+  background: #f5d2d2;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
+}
+.gameover img {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 25/26;
+}
+.gameoverbtn {
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  border-radius: 44px;
+  background: #f5adc8;
+  width: 200px;
+  height: 65px;
+}
+.gameoverbtn:hover {
+  box-shadow: 0 0 10px 6px #e76c99;
+  cursor: pointer;
+}
+.correctname {
+  color: #ff95bd;
+}
+
+.win {
+  display: none;
+}
+.winactive {
+  width: 400px;
+  height: 400px;
+  border-radius: 61px;
+  background: #f5d2d2;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
+}
+.win img {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 25/26;
+}
+.winbtn {
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  border-radius: 44px;
+  background: #f5adc8;
+  width: 200px;
+  height: 65px;
+}
+.winbtn:hover {
+  box-shadow: 0 0 10px 6px #e76c99;
+  cursor: pointer;
+}
+.correctname {
+  color: #ff95bd;
 }
