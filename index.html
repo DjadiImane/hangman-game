@@ -12,8 +12,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="fisrtfenetre active">
-        <img src="images/cloud.svg" alt="cloud img" class="cloud1" />
+      <div class="fisrtfenetre">
         <img src="images/MAN.svg" alt="manimage" class="man" />
         <img src="images/Ellipse 1.svg" class="shad" />
         <div class="grandmsg">
@@ -21,37 +20,37 @@
           <div class="speech">
             <div class="borderinterieur">
               <div class="txtmsg">
-              <p>
-                A small gift <br />
-                to begin
-              </p>
+                <p>
+                  A small gift <br />
+                  to begin
+                </p>
               </div>
               <img src="images/heart.svg" alt="heart image" class="heart" />
             </div>
           </div>
         </div>
-        <img src="images/cloud.svg" alt="cloud img" class="cloud2" />
-        <button class="btn_start">Let's start</button>
+
+        <button class="btn_start" onclick="nextfentere()">Let's start</button>
       </div>
-      
-<div class="secfenetre">
+
+      <div class="secfenetre">
         <p class="titre">Choose a category:</p>
         <div class="cathegories">
-          <div class="history">
+          <div class="history" onclick="startgame('history')">
             <div class="gauche">
               <img src="images/Greek Helmet.svg" alt="history img" />
               <p>History</p>
             </div>
             <img src="images/sup.svg" alt="superieur img" id="sup" />
           </div>
-          <div class="animals">
+          <div class="animals" onclick="startgame('animals')">
             <div class="gauche">
               <img src="images/Pet Commands Train.svg" alt="animals img" />
               <p>Animals</p>
             </div>
             <img src="images/sup.svg" alt="superieur img" id="sup" />
           </div>
-          <div class="books">
+          <div class="books" onclick="startgame('books')">
             <div class="gauche">
               <img src="images/Books.svg" alt="books img" />
               <p>Books</p>
@@ -59,6 +58,70 @@
             <img src="images/sup.svg" alt="superieur img" id="sup" />
           </div>
         </div>
+      </div>
     </div>
+    <div class="thirdfenetrehide">
+      <div class="top">
+        <div class="photoman">
+          <img src="images/hangman-0.svg" alt="hangmanimg" />
+        </div>
+        <div class="hinttime">
+          <div class="topbar">
+            <p>Incorrect guesses:<span class="nbguesse">0/6</span></p>
+            <p class="timing">00:32</p>
+            <button class="btnretour" onclick="retourchoix()">-></button>
+          </div>
+          <div class="hint">
+            <div class="border">
+              <p>
+                A system of government in which the people have the power to
+                choose their leaders through voting.
+              </p>
+            </div>
+          </div>
+          <div class="name">
+            <div class="borderbuttom"></div>
+            <div class="borderbuttom"><p>A</p></div>
+            <div class="borderbuttom"></div>
+            <div class="borderbuttom"></div>
+          </div>
+        </div>
+      </div>
+      <div class="alpha">
+        <div class="firstline">
+          <button>A</button>
+          <button>B</button>
+          <button>C</button>
+          <button>D</button>
+          <button>E</button>
+          <button>F</button>
+          <button>G</button>
+          <button>H</button>
+          <button>I</button>
+          <button>J</button>
+        </div>
+        <div class="secline">
+          <button>K</button>
+          <button>L</button>
+          <button>M</button>
+          <button>N</button>
+          <button>O</button>
+          <button>P</button>
+          <button>Q</button>
+          <button>R</button>
+          <button>S</button>
+        </div>
+        <div class="thirdclass">
+          <button>T</button>
+          <button>U</button>
+          <button>V</button>
+          <button>W</button>
+          <button>X</button>
+          <button>Y</button>
+          <button>Z</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
