@@ -9,7 +9,6 @@ body {
 }
 
 .fisrtfenetre {
-  /* il a display flex avant  */
   display: flex;
   width: 750px;
   height: 520px;
@@ -40,25 +39,6 @@ body {
   margin-top: 240px;
   filter: blur(10px);
 }
-.cloud1 {
-  position: absolute;
-  width: 60px;
-  height: 50px;
-  left: 30px;
-  top: 20px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.cloud2 {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  right: 40px;
-  bottom: 40%;
-  transform: translate(-50%, -50%);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .btn_start {
   border-radius: 20px;
   border: none;
@@ -79,13 +59,9 @@ body {
   cursor: pointer;
 }
 .grandmsg {
-  position: absolute;
-  width: 400px;
-  height: 100px;
-  left: 57%;
-
-  top: 10%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  width: 500px;
+  height: 240px;
 }
 .triangle {
   width: 0;
@@ -93,7 +69,10 @@ body {
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-bottom: 40px solid #fff;
-  transform: rotate(-108.646deg);
+  transform: rotate(-120.646deg);
+  top: 195px;
+  left: -120px;
+  position: absolute;
 }
 .speech {
   position: absolute;
@@ -101,6 +80,10 @@ body {
   background: #fff;
   width: 400px;
   height: 190px;
+  top: 130px;
+  left: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 .borderinterieur {
   position: absolute;
@@ -272,7 +255,6 @@ body {
   display: flex;
   flex-direction: column;
   z-index: 0;
-  position: absolute;
 }
 .thirdfenetrehide {
   display: none;
@@ -392,7 +374,7 @@ body {
   transform: translate(-50%, -50%);
   box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
 }
-.gameover img {
+.gameoveractive img {
   width: 100px;
   height: 100px;
   aspect-ratio: 25/26;
@@ -410,7 +392,7 @@ body {
   box-shadow: 0 0 10px 6px #e76c99;
   cursor: pointer;
 }
-.correctname {
+.correctnamegm {
   color: #ff95bd;
 }
 
@@ -435,7 +417,7 @@ body {
   transform: translate(-50%, -50%);
   box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
 }
-.win img {
+.winactive img {
   width: 100px;
   height: 100px;
   aspect-ratio: 25/26;

@@ -23,9 +23,9 @@
                 <p>
                   A small gift <br />
                   to begin
+                  <img src="images/heart.svg" alt="heart image" class="heart" />
                 </p>
               </div>
-              <img src="images/heart.svg" alt="heart image" class="heart" />
             </div>
           </div>
         </div>
@@ -63,27 +63,15 @@
     <!-- 3fenetre -->
     <div class="thirdfenetrehide">
       <div class="top">
-        <div class="photoman">
-          <!-- <img  class="hangimg" src="images/hangman-0.svg" alt="hangmanimg" /> -->
-        </div>
+        <div class="photoman"></div>
         <div class="hinttime">
           <div class="topbar">
             <p>Incorrect guesses:<span class="nbguesse"></span></p>
             <p class="timing"></p>
             <button class="btnretour" onclick="retourchoix()">-></button>
           </div>
-          <div class="hint">
-            <!-- <p>
-              A system of government in which the people have the power to
-              choose their leaders through voting.
-            </p> -->
-          </div>
-          <div class="name">
-            <!-- <div class="borderbuttom"></div>
-            <div class="borderbuttom"><p>A</p></div>
-            <div class="borderbuttom"></div>
-            <div class="borderbuttom"></div> -->
-          </div>
+          <div class="hint"></div>
+          <div class="name"></div>
         </div>
       </div>
       <div class="alpha">
@@ -124,14 +112,16 @@
     <div class="gameover">
       <img src="images/lost.gif" alt="los gif" />
       <h1>Game Over!</h1>
-      <p>The correct word was: <span class="correctname">BLABLABLA</span></p>
-      <button class="gameoverbtn">Try again</button>
+      <p>The correct word was: <span class="correctnamegm">BLABLABLA</span></p>
+      <button class="gameoverbtn" onclick="replay('gameover')">
+        Try again
+      </button>
     </div>
     <div class="win">
       <img src="images/victory.gif" alt="victory gif" />
       <h1>Congrats!</h1>
-      <p>You found the word: <span class="correctname">BLABLABLA</span></p>
-      <button class="winbtn">Play again</button>
+      <p>You found the word: <span class="correctname"></span></p>
+      <button class="winbtn" onclick="replay('win')">Play again</button>
     </div>
     <script src="script.js"></script>
   </body>
